@@ -1,0 +1,12 @@
+.about_container {
+  width: 100%;
+}
+.about_header_left_container {
+  width: 80%;
+}
+.about_header_right_img img {
+  width: 400px;
+}
+.about_header_left_container p:nth-child(3) {
+  margin-top: 20px;
+}

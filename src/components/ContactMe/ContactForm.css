@@ -1,0 +1,90 @@
+.contact_form {
+  width: 80%;
+}
+
+.form_info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 10px;
+}
+.form_input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.contact_form label {
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  margin-bottom: 3px;
+  color: var(--text-secondary-color);
+}
+.contact_form input,
+.contact_form textarea {
+  border: none;
+  background-color: rgb(218, 218, 218);
+  color: var(--text-primary-color);
+  font-size: 18px;
+  font-weight: 400;
+  padding: 10px;
+}
+.contact_form input,
+.contact_form textarea {
+  height: 45px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+.contact_form input:focus,
+.contact_form textarea:focus {
+  outline: none;
+  border: 2px solid var(--text-logo-light-color);
+  background-color: transparent;
+}
+.contact_form textarea {
+  height: 130px;
+  min-height: 75px;
+}
+.form_radio_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 3px;
+}
+
+.form_radio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.form_radio input {
+  height: 25px;
+}
+.form_radio label {
+  margin-left: 10px;
+}
+.form_btn {
+  margin-top: 20px;
+}
+.form_btn button {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 20px;
+  border-radius: 5px;
+  border: 2px solid var(--text-logo-light-color);
+  color: #ffffff;
+  background-color: var(--text-logo-light-color);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.form_btn button:hover {
+  background-color: transparent;
+  color: var(--text-logo-light-color);
+}
+@media only screen and (max-width: 1150px) {
+  .form_radio_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 850px) {
+  .contact_form {
+    width: 100%;
+  }
+}
